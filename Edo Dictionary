@@ -1,0 +1,56 @@
+Edo_Dictionary ={"la re":  'come',
+                  "oba":  'king',
+                  "koyo":  'hello',
+                  "Igho":  'money',
+                  "edi ebo": 'pineapple'
+                  "iye":  'mother'
+                  "ara":  'father'
+                  "omo":  'child'
+                  "aga":  'chair'
+                  "uwe se":  'thank you'
+                  "osa lob wa":  'God'
+                  "osa hon":  'God hear'
+                  "ito han":  'mercy'
+                  "uwa":  'prosperity'
+                  "efua":  'sunshine'
+                  "ose":  'beauty'
+                  "efosa":   'God blessing'
+                  "osaje":   'God sent'
+                  "osarenmen":   'God gift'
+                  "Ayewhosa":    'who is like God'}
+from tkinter import Tk, Entry, Button, Label, StringVar
+
+window = Tk()
+window.geometry("600x250")
+window.title("Edo_Dictionary")
+
+
+word = StringVar()
+word_entry = Entry(window, textvariable=word, font=('ariel', 19))
+word_entry.pack()
+
+
+result =StringVar()
+result_label = Label(window, textvariable=result)
+result_label.pack()
+
+
+def search (word):
+    if word in Edo Dictionary:
+        result.set(Edo_Dictionary[word])
+        print(Edo_Dictionary[word])
+    else:
+        result.set("not found")
+
+search_btn = Button(window, text="search", command=lambda: search(word.get()))
+search_btn.pack()
+
+
+exit_button=(window,text="exit",command=lambda: exit())
+exit_button.pack()
+
+
+word_entry = Entry(window, textvariable=word, font=('ariel', 19))
+window.mainloop()
+
+
