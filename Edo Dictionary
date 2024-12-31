@@ -19,6 +19,7 @@ Edo_Dictionary ={"la re":  'come',
                   "osarenmen":   'God gift'
                   "Ayewhosa":    'who is like God'
 }
+
 from tkinter import Tk, Entry, Button, Label, StringVar
 
 window = Tk()
@@ -36,7 +37,7 @@ result_label = Label(window, textvariable=result)
 result_label.pack()
 
 
-def search (word):
+def search(word):
     if word in Edo Dictionary:
         result.set(Edo_Dictionary[word])
         print(Edo_Dictionary[word])
@@ -47,7 +48,7 @@ search_btn = Button(window, text="search", command=lambda: search(word.get()))
 search_btn.pack()
 
 
-exit_button=(window,text="exit",command=lambda: exit())
+exit_button = Button(window, text="exit", command=lambda: exit())
 exit_button.pack()
 
 
