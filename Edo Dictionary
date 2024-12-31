@@ -47,12 +47,9 @@ def search(word):
 search_btn = Button(window, text="search", command=lambda: search(word.get()))
 search_btn.pack()
 
-
 exit_button = Button(window, text="exit", command=lambda: exit())
 exit_button.pack()
 
-
-word_entry = Entry(window, textvariable=word, font=('ariel', 19))
 window.mainloop()
 
 
