@@ -17,7 +17,8 @@ Edo_Dictionary ={"la re":  'come',
                   "efosa":   'God blessing'
                   "osaje":   'God sent'
                   "osarenmen":   'God gift'
-                  "Ayewhosa":    'who is like God'}
+                  "Ayewhosa":    'who is like God'
+}
 from tkinter import Tk, Entry, Button, Label, StringVar
 
 window = Tk()
