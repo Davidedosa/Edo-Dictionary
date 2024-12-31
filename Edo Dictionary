@@ -26,16 +26,13 @@ window = Tk()
 window.geometry("600x250")
 window.title("Edo_Dictionary")
 
-
 word = StringVar()
 word_entry = Entry(window, textvariable=word, font=('ariel', 19))
 word_entry.pack()
 
-
-result =StringVar()
+result = StringVar()
 result_label = Label(window, textvariable=result)
 result_label.pack()
-
 
 def search(word):
     if word in Edo Dictionary:
